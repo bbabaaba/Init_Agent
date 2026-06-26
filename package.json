@@ -1,0 +1,15 @@
+{
+  "name": "init-agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI Skills Collector & Evaluator ledger tools",
+  "scripts": {
+    "validate-ledger": "tsx scripts/validate-ledger.ts",
+    "smoke-test": "tsx scripts/smoke-test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

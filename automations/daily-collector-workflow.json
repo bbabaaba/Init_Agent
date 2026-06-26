@@ -1,0 +1,35 @@
+{
+  "name": "Daily AI Skills Collector",
+  "description": "Discover AI skills repos on GitHub daily, deduplicate via ledger, write incremental markdown report, commit to Init_Agent.",
+  "workflow": {
+    "triggers": [
+      {
+        "cron": {
+          "cron": "0 9 * * *"
+        }
+      }
+    ],
+    "actions": [
+      {
+        "mcp": {
+          "server": {
+            "name": "GitHub"
+          }
+        }
+      }
+    ],
+    "prompts": [
+      "You are the AI Skills Collector Agent. Follow the project skill at .cursor/skills/ai-skills-collector/SKILL.md exactly.\n\nEach run:\n1. Read data/seen-items.json for all known item IDs.\n2. Search GitHub using the MCP server (fallback: gh CLI) with today's rotating query set from .cursor/skills/ai-skills-collector/search-queries.md.\n3. Apply quality heuristics from the skill; skip items already in the ledger.\n4. Append new items to data/seen-items.json with status pending_review.\n5. Write reports/YYYY-MM-DD.md using reports/TEMPLATE.md — incremental new items only.\n6. Commit and push data/seen-items.json and reports/YYYY-MM-DD.md with message chore(collector): daily digest YYYY-MM-DD.\n\nDo not rewrite past report files. Do not delete ledger entries. Cap at 5 search queries and 20 results per query."
+    ],
+    "model": "",
+    "agentOptions": {
+      "skipInstall": false
+    },
+    "memoryEnabled": true,
+    "gitConfig": {
+      "repo": "",
+      "branch": "master"
+    }
+  },
+  "_note": "Import via Cursor Automations editor. Set gitConfig.repo to your Init_Agent GitHub repo. Confirm GitHub MCP server name matches your dashboard (may differ from 'GitHub'). See automations/daily-collector.md."
+}

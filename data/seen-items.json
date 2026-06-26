@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "smoke-test/init-agent-fixture",
+      "type": "repo",
+      "url": "https://github.com/smoke-test/init-agent-fixture",
+      "title": "init-agent-fixture",
+      "summary": "Smoke test fixture repo for validating collector dedup and report flow.",
+      "topics": [
+        "cursor-skills",
+        "automation"
+      ],
+      "first_seen": "2026-06-24",
+      "last_seen": "2026-06-24",
+      "content_hash": "sha256:41f679288c6a429ba418b8eb1b18f93f4197e2b886ec22c0569c5c3050965370",
+      "status": "pending_review",
+      "scores": null,
+      "supersedes": null,
+      "duplicate_of": null,
+      "stars": 0
+    }
+  ]
+}
