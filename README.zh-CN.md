@@ -53,7 +53,7 @@ Init_Agent/
 │   └── ai-skills-evaluator/       # 评估器技能 + 评分细则
 ├── data/
 │   ├── seen-items.json            # 增量账本
-│   └── schema.json                # JSON Schema 校验
+│   └── schema.json                # 字段定义（validate-ledger 执行校验）
 ├── reports/
 │   ├── TEMPLATE.md                # 日报模板
 │   └── evaluations/               # 周评报告目录
