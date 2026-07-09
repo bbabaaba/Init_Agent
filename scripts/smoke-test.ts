@@ -129,17 +129,17 @@ function main(): void {
   const before = ledger.items.length;
 
   const added = appendIfNew(ledger, SAMPLE);
-  // Second append must always be skipped (dedup).
-  const secondAdded = appendIfNew(ledger, SAMPLE);
-  const skipped = secondAdded ? 0 : 1;
-
-  if (secondAdded) {
+  // Second append must always be skipped (dedup assertion, not a report stat).
+  if (appendIfNew(ledger, SAMPLE)) {
     throw new Error("Smoke test failed: duplicate append was not blocked");
   }
 
   if (added) saveLedger(ledger);
 
+  // Report stats mirror a real collector run: the fixture is either one new
+  // item (fresh ledger) or one skipped duplicate (already collected).
   const newCount = added ? 1 : 0;
+  const skipped = added ? 0 : 1;
   writeReport(newCount, skipped);
 
   execSync("npm run validate-ledger", { cwd: ROOT, stdio: "inherit" });
@@ -152,8 +152,13 @@ function main(): void {
   console.log(`  - Report: ${REPORT_PATH}`);
 
   // Clean fixture report so smoke-test leaves no untracked clutter by default.
-  rmSync(SMOKE_DIR, { recursive: true, force: true });
-  console.log(`  - Cleaned: ${SMOKE_DIR}`);
+  // Set SMOKE_KEEP=1 to inspect the generated report.
+  if (process.env.SMOKE_KEEP === "1") {
+    console.log(`  - Kept report for inspection (SMOKE_KEEP=1)`);
+  } else {
+    rmSync(SMOKE_DIR, { recursive: true, force: true });
+    console.log(`  - Cleaned: ${SMOKE_DIR}`);
+  }
 }
 
 main();
