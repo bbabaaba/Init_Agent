@@ -19,6 +19,155 @@
       "supersedes": null,
       "duplicate_of": null,
       "stars": 0
+    },
+    {
+      "id": "langchain-ai/langchain",
+      "type": "repo",
+      "url": "https://github.com/langchain-ai/langchain",
+      "title": "langchain",
+      "summary": "The most widely adopted agent engineering platform with composable chains, tools, and integrations for building LLM applications.",
+      "topics": [
+        "agent-framework",
+        "sdk"
+      ],
+      "first_seen": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "content_hash": "sha256:2ef30a4754241b7a7572e7c38337b57b43c7f178cafabc6c7db79f0414b78dc5",
+      "status": "pending_review",
+      "scores": null,
+      "supersedes": null,
+      "duplicate_of": null,
+      "stars": 141389
+    },
+    {
+      "id": "mastra-ai/mastra",
+      "type": "repo",
+      "url": "https://github.com/mastra-ai/mastra",
+      "title": "mastra",
+      "summary": "Modern TypeScript framework for AI-powered applications and agents with workflows, RAG, and evals built in.",
+      "topics": [
+        "agent-framework",
+        "sdk"
+      ],
+      "first_seen": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "content_hash": "sha256:8614b4281bb994b5c8406684dd43ead012f0cef2277eea02797b3aee71e3b49d",
+      "status": "pending_review",
+      "scores": null,
+      "supersedes": null,
+      "duplicate_of": null,
+      "stars": 25990
+    },
+    {
+      "id": "deepset-ai/haystack",
+      "type": "repo",
+      "url": "https://github.com/deepset-ai/haystack",
+      "title": "haystack",
+      "summary": "Open-source AI orchestration framework for production LLM pipelines with explicit control over retrieval, routing, memory, and generation.",
+      "topics": [
+        "agent-framework"
+      ],
+      "first_seen": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "content_hash": "sha256:553fbef5870272a77b3c927cf7ffdd589671e06f21118e7f55415dc7e1584989",
+      "status": "pending_review",
+      "scores": null,
+      "supersedes": null,
+      "duplicate_of": null,
+      "stars": 25856
+    },
+    {
+      "id": "comet-ml/opik",
+      "type": "repo",
+      "url": "https://github.com/comet-ml/opik",
+      "title": "opik",
+      "summary": "Debug, evaluate, and monitor LLM applications, RAG systems, and agentic workflows with comprehensive tracing and automated evaluations.",
+      "topics": [
+        "evaluation"
+      ],
+      "first_seen": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "content_hash": "sha256:764df95fc0c4700561eb8e2a3fa7af8c647c9b067a62eaf28067a6845de181da",
+      "status": "pending_review",
+      "scores": null,
+      "supersedes": null,
+      "duplicate_of": null,
+      "stars": 20495
+    },
+    {
+      "id": "pydantic/pydantic-ai",
+      "type": "repo",
+      "url": "https://github.com/pydantic/pydantic-ai",
+      "title": "pydantic-ai",
+      "summary": "Type-safe AI agent framework from the Pydantic team bringing FastAPI-style ergonomics to LLM agent development in Python.",
+      "topics": [
+        "agent-framework",
+        "sdk"
+      ],
+      "first_seen": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "content_hash": "sha256:6e1f872207401a963eeb5ed83e9d465dc20db44924c61733d411e01b3d59d873",
+      "status": "pending_review",
+      "scores": null,
+      "supersedes": null,
+      "duplicate_of": null,
+      "stars": 18291
+    },
+    {
+      "id": "Arize-ai/phoenix",
+      "type": "repo",
+      "url": "https://github.com/Arize-ai/phoenix",
+      "title": "phoenix",
+      "summary": "Open-source AI observability and evaluation platform for tracing, evaluating, and troubleshooting LLM and agent applications.",
+      "topics": [
+        "evaluation"
+      ],
+      "first_seen": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "content_hash": "sha256:baad5039b392e527fab772088961fb14a01308afb61daeba7d9425ea00134e66",
+      "status": "pending_review",
+      "scores": null,
+      "supersedes": null,
+      "duplicate_of": null,
+      "stars": 10478
+    },
+    {
+      "id": "VoltAgent/voltagent",
+      "type": "repo",
+      "url": "https://github.com/VoltAgent/voltagent",
+      "title": "voltagent",
+      "summary": "AI agent engineering platform built on an open-source TypeScript agent framework with observability and deployment tooling.",
+      "topics": [
+        "agent-framework",
+        "sdk"
+      ],
+      "first_seen": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "content_hash": "sha256:195bba2cbb47a6a296a02683ecf8342f9b9ff6cd952e0261e1817fff81a8c6a5",
+      "status": "pending_review",
+      "scores": null,
+      "supersedes": null,
+      "duplicate_of": null,
+      "stars": 9998
+    },
+    {
+      "id": "omnigent-ai/omnigent",
+      "type": "repo",
+      "url": "https://github.com/omnigent-ai/omnigent",
+      "title": "omnigent",
+      "summary": "Open-source AI agent meta-harness that orchestrates Claude Code, Codex, Cursor, and other coding agents under one framework.",
+      "topics": [
+        "agent-framework",
+        "automation"
+      ],
+      "first_seen": "2026-07-09",
+      "last_seen": "2026-07-09",
+      "content_hash": "sha256:406f8b5cbe8634328e8eee362acb7a5ffff47d5687a6b90d53e297396bcf45d7",
+      "status": "pending_review",
+      "scores": null,
+      "supersedes": null,
+      "duplicate_of": null,
+      "stars": 6892
     }
   ]
 }
