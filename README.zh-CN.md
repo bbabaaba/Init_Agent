@@ -12,7 +12,7 @@
 ## 数据
 
 - **账本 (Ledger):** [`data/seen-items.json`](data/seen-items.json) — 所有已发现项目，去重的唯一数据源
-- **模式 (Schema):** [`data/schema.json`](data/schema.json) — 账本的 JSON Schema 校验规则
+- **模式 (Schema):** [`data/schema.json`](data/schema.json) — 字段定义；由 `npm run validate-ledger` 执行校验
 - **报告 (Reports):** [`reports/YYYY-MM-DD.md`](reports/) — 增量日报（仅当日新增）
 
 ## 前置条件

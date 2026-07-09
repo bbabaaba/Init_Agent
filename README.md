@@ -12,7 +12,7 @@ Daily discovery of useful AI agent skills repos and solid GitHub solutions, with
 ## Data
 
 - **Ledger:** [`data/seen-items.json`](data/seen-items.json) — all discovered items, dedup source of truth
-- **Schema:** [`data/schema.json`](data/schema.json) — JSON Schema for ledger validation
+- **Schema:** [`data/schema.json`](data/schema.json) — field definitions; enforced by `npm run validate-ledger`
 - **Reports:** [`reports/YYYY-MM-DD.md`](reports/) — incremental daily digests (new items only)
 
 ## Prerequisites

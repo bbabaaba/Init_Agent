@@ -22,7 +22,7 @@ Judge whether new discoveries are **better or more solid** than existing promote
 
 ## When to run
 
-- **Weekly automation** (Phase 2): Mondays 10:00 — see `automations/daily-collector.md`
+- **Weekly automation** (Phase 2): Mondays 10:00 — see the Phase 2 section in `automations/daily-collector.md`
 - **Manual:** User asks to evaluate pending items
 
 ## Run procedure
