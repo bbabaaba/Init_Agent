@@ -40,17 +40,19 @@ agent skills repo updated:>2025-06-01
 mcp server pushed:>2025-06-01 stars:>20
 topic:cursor stars:>10
 topic:mcp stars:>10
+```
+
+## Issue / discussion queries (optional swap slot)
+
+When a group query under-fills results, **swap** one repo query (still within the 5-query cap) for:
+
+```
 "cursor agent" is:issue state:open
-```
-
-## Issue / discussion queries (optional 6th slot)
-
-When a group query under-fills results, swap one repo query for:
-
-```
 "cursor skills" OR "agent skills" is:issue comments:>3
 model context protocol best practices is:discussion
 ```
+
+Use `gh search issues` / GitHub issues MCP for these — not `gh search repos`.
 
 ## gh CLI equivalents
 
@@ -63,5 +65,8 @@ gh search issues "\"cursor agent\" is:issue state:open" --sort updated --limit 1
 ## Query selection algorithm
 
 1. `groupIndex = dayOfYear % 4` (0–3)
-2. Take first 5 queries from that group
-3. If `< 10` unique candidates after dedup, pull 1 query from `(groupIndex + 1) % 4`
+2. Take first 5 queries from that group (hard cap: **5 queries per run**)
+3. If `< 10` unique candidates after dedup, **replace** one under-filling repo query with either:
+   - 1 query from `(groupIndex + 1) % 4`, or
+   - an optional issue/discussion query from the swap-slot list above
+4. Never exceed 5 total queries — swap, do not add

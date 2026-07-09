@@ -94,7 +94,7 @@ For each accepted new item, append to `items[]`:
 
 ### 5. Write daily report
 
-Create `reports/YYYY-MM-DD.md` (today's date, UTC or local — be consistent). Follow `reports/TEMPLATE.md`.
+Create `reports/YYYY-MM-DD.md` (today's date in **UTC**). Follow `reports/TEMPLATE.md`.
 
 **Incremental only:** Include **today's new items** in the body. Do not copy the full ledger. Summary stats:
 

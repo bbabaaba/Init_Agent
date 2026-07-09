@@ -6,9 +6,11 @@
   "description": "AI Skills Collector & Evaluator ledger tools",
   "scripts": {
     "validate-ledger": "tsx scripts/validate-ledger.ts",
-    "smoke-test": "tsx scripts/smoke-test.ts"
+    "smoke-test": "tsx scripts/smoke-test.ts",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@types/node": "^22.20.1",
     "tsx": "^4.19.0",
     "typescript": "^5.6.0"
   }
